@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/question.dart';
 
 void main() {
   runApp(MyApplication());
@@ -54,7 +55,7 @@ class MyApplicationState extends State<MyApplication> {
         ),
         body: Column(
           children: <Widget>[
-            Text(questions.elementAt(index)),
+            Question(questions.elementAt(index)),
             RaisedButton(
               child: Text("Lets Do it 1"),
               onPressed: btn1Clicked,
